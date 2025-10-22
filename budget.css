@@ -1,0 +1,163 @@
+.budget-app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+}
+
+/* Sidebar */
+.budget-sidebar {
+  width: 250px;
+  background-color: #0f0f25;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 2px solid #6c5ce7;
+}
+
+.lang-btn {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.lang-btn:hover {
+  background-color: #4834d4;
+}
+
+.add-category input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 8px;
+  background-color: #162447;
+  color: #f0f0f0;
+}
+
+.add-category button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.add-category button:hover {
+  background-color: #4834d4;
+}
+
+/* Content */
+.budget-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.budget-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #a29bfe;
+}
+
+.budget-content h2 {
+  margin-top: 30px;
+  color: #74b9ff;
+}
+
+.input-section input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  background-color: #162447;
+  color: #f0f0f0;
+  margin-top: 10px;
+}
+
+/* Categories Grid */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.category-card {
+  background-color: #0f3460;
+  border-radius: 15px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.category-card h3 {
+  margin-bottom: 10px;
+  color: #e0c3fc;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #162447;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper span {
+  margin-right: 5px;
+  color: #74b9ff;
+  font-weight: bold;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f0f0f0;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Progress Bars */
+.progress-bar {
+  height: 8px;
+  background-color: #0f3460;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  background-color: #6c5ce7;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Alerts */
+.alert.over {
+  color: #ff7675;
+  font-weight: bold;
+}
+.alert.under {
+  color: #55efc4;
+  font-weight: bold;
+}
+
+.budget-left {
+  margin-top: 10px;
+  font-weight: bold;
+}
