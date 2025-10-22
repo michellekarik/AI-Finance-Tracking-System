@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Home, DollarSign, MessageCircle, X, Moon, Sun, Globe } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-
+import "./TransactionsPage.css";
 
 export default function TransactionsPage() {
   const navigate = useNavigate();
